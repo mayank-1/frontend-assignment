@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // COMPONENTS
 import Button from "./../Button";
@@ -10,12 +11,14 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const isLastFourPages = currentPage > totalPages - 4;
 
   const getPageNumbers = () => {
+    if (!totalPages || totalPages <= 0) return [];
+
     const pageNumbers = [];
 
     // Determine the range of page numbers to display
     if (isLastFourPages) {
       // Show the last four pages
-      for (let i = totalPages - 3; i <= totalPages; i++) {
+      for (let i = Math.max(1, totalPages - 3); i <= totalPages; i++) {
         pageNumbers.push(i);
       }
     } else {
@@ -30,6 +33,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
     return pageNumbers;
   };
+
+  if (!totalPages || totalPages <= 0) return null;
+
+  const showFirstPageButton = currentPage > 4;
 
   return (
     <div className="container" role="navigation" aria-label="Pagination">
@@ -50,6 +57,20 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         </svg>
         <span>Previous</span>
       </Button>
+
+      {showFirstPageButton && (
+        <>
+          <Button
+            onClick={() => onPageChange(1)}
+            active={currentPage === 1}
+            label="Page 1"
+          >
+            1
+          </Button>
+          <span className="ellipsis">...</span>
+        </>
+      )}
+
       {getPageNumbers().map((number) => (
         <Button
           key={number}
@@ -60,8 +81,14 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           {number}
         </Button>
       ))}
-      {!isLastFourPages && <span className="ellipsis">...</span>}
-      {!isLastFourPages && <span className="total-pages">{totalPages}</span>}
+
+      {!isLastFourPages && totalPages > 4 && (
+        <>
+          <span className="ellipsis">...</span>
+          <span className="total-pages">{totalPages}</span>
+        </>
+      )}
+
       <Button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
@@ -81,6 +108,12 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       </Button>
     </div>
   );
+};
+
+Pagination.propTypes = {
+  currentPage: PropTypes.number.isRequired,
+  totalPages: PropTypes.number.isRequired,
+  onPageChange: PropTypes.func.isRequired,
 };
 
 export default Pagination;

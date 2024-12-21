@@ -3,7 +3,13 @@ import PropTypes from "prop-types";
 // CSS
 import "./index.css";
 
-const Button = ({ onClick, disabled, active, children, label }) => {
+const Button = ({
+  onClick,
+  disabled = false,
+  active = false,
+  children,
+  label = "",
+}) => {
   return (
     <button
       onClick={onClick}
@@ -23,12 +29,6 @@ Button.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.node.isRequired,
   label: PropTypes.string,
-};
-
-Button.defaultProps = {
-  disabled: false,
-  active: false,
-  label: "",
 };
 
 export default Button;
