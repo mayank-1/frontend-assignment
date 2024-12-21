@@ -5,7 +5,7 @@ export const getCurrencyFormat = (
   locale = "en-IN"
 ) => {
   // Check if the input is a valid number
-  if (isNaN(amount)) {
+  if (isNaN(amount) || amount === null) {
     return "Invalid amount";
   }
 

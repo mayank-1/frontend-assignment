@@ -1,5 +1,5 @@
 // UTILS
-import { getCurrencyFormat } from "../../utils/stringUtils";
+import { getCurrencyFormat } from "../../utils";
 
 export const getHomPageTableColumns = () => [
   { header: "S.No.", key: "s.no" },

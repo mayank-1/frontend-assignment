@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > renders correctly with active prop 1`] = `
+<button
+  aria-current="page"
+  aria-label=""
+  class="active"
+>
+  Click me
+</button>
+`;
+
+exports[`Button > renders correctly with default props 1`] = `
+<button
+  aria-label=""
+  class=""
+>
+  Click me
+</button>
+`;
+
+exports[`Button > renders correctly with disabled prop 1`] = `
+<button
+  aria-label=""
+  class=""
+  disabled=""
+>
+  Click me
+</button>
+`;
+
+exports[`Button > renders correctly with label prop 1`] = `
+<button
+  aria-label="Submit Form"
+  class=""
+>
+  Click me
+</button>
+`;

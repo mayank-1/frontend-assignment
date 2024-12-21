@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // COMPONENTS
 import Table from "./components/Table";
@@ -15,13 +15,16 @@ import "./App.css";
 
 const App = () => {
   const [page, setPage] = useState(1);
-  const {
-    data = [],
-    loading,
-    error,
-  } = useFetchData("src/data/frontend-assignment.json");
+  const recordsPerPage = 5;
 
-  const newData = data?.slice(page * 5 - 5, page * 5);
+  const { data = [], loading } = useFetchData(
+    "src/data/frontend-assignment.json"
+  );
+
+  const newData = data?.slice(
+    page * recordsPerPage - recordsPerPage,
+    page * recordsPerPage
+  ); // Here the first parameter will be the start index and the second will be the end index
   return (
     <div>
       <h2>Pagination table</h2>
@@ -33,7 +36,7 @@ const App = () => {
         />
         <Pagination
           currentPage={page}
-          totalPages={Math.ceil(data?.length / 5)}
+          totalPages={Math.ceil(data?.length / recordsPerPage)}
           onPageChange={setPage}
         />
       </div>

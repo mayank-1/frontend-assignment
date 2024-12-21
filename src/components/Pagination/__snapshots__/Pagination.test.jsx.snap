@@ -1,0 +1,544 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pagination > renders "Next" button on earlier pages 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 2"
+    class="active"
+  >
+    2
+  </button>
+  <button
+    aria-label="Page 3"
+    class=""
+  >
+    3
+  </button>
+  <button
+    aria-label="Page 4"
+    class=""
+  >
+    4
+  </button>
+  <button
+    aria-label="Page 5"
+    class=""
+  >
+    5
+  </button>
+  <button
+    aria-label="Next page"
+    class=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination > renders "Previous" button on later pages 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-label="Page 2"
+    class=""
+  >
+    2
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 3"
+    class="active"
+  >
+    3
+  </button>
+  <button
+    aria-label="Page 4"
+    class=""
+  >
+    4
+  </button>
+  <button
+    aria-label="Page 5"
+    class=""
+  >
+    5
+  </button>
+  <button
+    aria-label="Next page"
+    class=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination > renders correctly with basic props 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 2"
+    class="active"
+  >
+    2
+  </button>
+  <button
+    aria-label="Page 3"
+    class=""
+  >
+    3
+  </button>
+  <button
+    aria-label="Page 4"
+    class=""
+  >
+    4
+  </button>
+  <button
+    aria-label="Page 5"
+    class=""
+  >
+    5
+  </button>
+  <button
+    aria-label="Next page"
+    class=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination > renders disabled "Next" button on last page 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-label="Page 1"
+    class=""
+  >
+    1
+  </button>
+  <span
+    class="ellipsis"
+  >
+    ...
+  </span>
+  <button
+    aria-label="Page 2"
+    class=""
+  >
+    2
+  </button>
+  <button
+    aria-label="Page 3"
+    class=""
+  >
+    3
+  </button>
+  <button
+    aria-label="Page 4"
+    class=""
+  >
+    4
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 5"
+    class="active"
+  >
+    5
+  </button>
+  <button
+    aria-label="Next page"
+    class=""
+    disabled=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination > renders disabled "Previous" button on first page 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+    disabled=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 1"
+    class="active"
+  >
+    1
+  </button>
+  <button
+    aria-label="Page 2"
+    class=""
+  >
+    2
+  </button>
+  <button
+    aria-label="Page 3"
+    class=""
+  >
+    3
+  </button>
+  <span
+    class="ellipsis"
+  >
+    ...
+  </span>
+  <span
+    class="total-pages"
+  >
+    5
+  </span>
+  <button
+    aria-label="Next page"
+    class=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination > renders ellipsis for missing pages in the middle 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 4"
+    class="active"
+  >
+    4
+  </button>
+  <button
+    aria-label="Page 5"
+    class=""
+  >
+    5
+  </button>
+  <button
+    aria-label="Page 6"
+    class=""
+  >
+    6
+  </button>
+  <span
+    class="ellipsis"
+  >
+    ...
+  </span>
+  <span
+    class="total-pages"
+  >
+    10
+  </span>
+  <button
+    aria-label="Next page"
+    class=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination > renders page numbers correctly 1`] = `
+<div
+  aria-label="Pagination"
+  class="container"
+  role="navigation"
+>
+  <button
+    aria-label="Previous page"
+    class=""
+  >
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.874.35a1.28 1.28 0 011.761 0 1.165 1.165 0 010 1.695L3.522 6l4.113 3.955a1.165 1.165 0 010 1.694 1.28 1.28 0 01-1.76 0L0 6 5.874.35z"
+      />
+    </svg>
+    <span>
+      Previous
+    </span>
+  </button>
+  <button
+    aria-current="page"
+    aria-label="Page 3"
+    class="active"
+  >
+    3
+  </button>
+  <button
+    aria-label="Page 4"
+    class=""
+  >
+    4
+  </button>
+  <button
+    aria-label="Page 5"
+    class=""
+  >
+    5
+  </button>
+  <span
+    class="ellipsis"
+  >
+    ...
+  </span>
+  <span
+    class="total-pages"
+  >
+    7
+  </span>
+  <button
+    aria-label="Next page"
+    class=""
+  >
+    <span>
+      Next
+    </span>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      height="12"
+      viewBox="0 0 8 12"
+      width="8"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.126.35a1.28 1.28 0 00-1.761 0 1.165 1.165 0 000 1.695L4.478 6 .365 9.955a1.165 1.165 0 000 1.694 1.28 1.28 0 001.76 0L8 6 2.126.35z"
+      />
+    </svg>
+  </button>
+</div>
+`;

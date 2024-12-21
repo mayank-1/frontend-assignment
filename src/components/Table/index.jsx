@@ -19,7 +19,7 @@ const Table = ({ header, data = [], loading = false }) => {
 
   return (
     <table
-      role="funding"
+      role="table"
       aria-label="Data table to show amount pledged and percentage funded"
     >
       <thead>
