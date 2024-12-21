@@ -1,7 +1,10 @@
 import React, { useCallback, useMemo } from "react";
 import PropTypes from "prop-types";
 
-const Table = ({ header, data }) => {
+// CSS
+import "./index.css";
+
+const Table = ({ header, data = [], loading = false }) => {
   // Memoize headers to prevent unnecessary re-renders
   const memoizedHeader = useMemo(() => header, [header]);
 
@@ -15,7 +18,10 @@ const Table = ({ header, data }) => {
   }, []);
 
   return (
-    <table style={{ borderCollapse: "collapse", width: "100%" }}>
+    <table
+      role="funding"
+      aria-label="Data table to show amount pledged and percentage funded"
+    >
       <thead>
         <tr>
           {memoizedHeader.map((col, index) => (
@@ -35,8 +41,42 @@ const Table = ({ header, data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.length > 0 ? (
-          data.map((row, rowIndex) => (
+        {(() => {
+          if (loading) {
+            return (
+              <tr>
+                <td
+                  colSpan={memoizedHeader.length}
+                  style={{
+                    textAlign: "center",
+                    padding: "16px",
+                    color: "#888",
+                  }}
+                >
+                  Loading...
+                </td>
+              </tr>
+            );
+          }
+
+          if (data.length === 0) {
+            return (
+              <tr>
+                <td
+                  colSpan={memoizedHeader.length}
+                  style={{
+                    textAlign: "center",
+                    padding: "16px",
+                    color: "#888",
+                  }}
+                >
+                  No data available
+                </td>
+              </tr>
+            );
+          }
+
+          return data.map((row, rowIndex) => (
             <tr key={rowIndex}>
               {memoizedHeader.map((col, colIndex) => (
                 <td
@@ -47,21 +87,8 @@ const Table = ({ header, data }) => {
                 </td>
               ))}
             </tr>
-          ))
-        ) : (
-          <tr>
-            <td
-              colSpan={memoizedHeader.length}
-              style={{
-                textAlign: "center",
-                padding: "16px",
-                color: "#888",
-              }}
-            >
-              No data available
-            </td>
-          </tr>
-        )}
+          ));
+        })()}
       </tbody>
     </table>
   );
@@ -75,7 +102,8 @@ Table.propTypes = {
       render: PropTypes.func, // Optional render function
     })
   ).isRequired,
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(PropTypes.object),
+  loading: PropTypes.bool,
 };
 
 export default Table;

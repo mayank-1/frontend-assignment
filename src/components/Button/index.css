@@ -1,0 +1,38 @@
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg:first-child {
+    margin-right: 5px;
+    height: 10px;
+  }
+
+  & > svg:last-child {
+    margin-left: 5px;
+    height: 10px;
+  }
+
+  &:hover:not(:disabled) {
+    background: #f5f6fa;
+    border-color: #3498db;
+    color: #6f7373;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+  }
+}

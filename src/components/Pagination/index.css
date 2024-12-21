@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .ellipsis {
+        align-self: baseline;
+        color: #6f7373;
+    }
+
+    .total-pages {
+        color: #6f7373;
+        font-size: 12px;
+    }
+}
