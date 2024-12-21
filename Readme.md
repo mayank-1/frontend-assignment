@@ -1,5 +1,3 @@
-Here's the updated `README.md` based on your inputs:
-
 ````markdown
 # Frontend Assignment - Senior Software Engineer Take-Home Assessment
 
