@@ -1,21 +1,4 @@
-Here's the updated `README.md` based on your inputs:
-
-````markdown
-# Frontend Assignment - Senior Software Engineer Take-Home Assessment
-
-This repository contains the solution for the frontend assignment given as part of the Senior Software Engineer take-home assessment. The project demonstrates proficiency in frontend technologies with an emphasis on clean code, component design, accessibility, and testing.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Technologies Used](#technologies-used)
-- [Setup Instructions](#setup-instructions)
-- [Features](#features)
-- [Code Structure](#code-structure)
-- [Testing](#testing)
-- [Known Issues](#known-issues)
-- [Contributing](#contributing)
-- [License](#license)
+# Frontend Assignment
 
 ## Overview
 
@@ -69,29 +52,10 @@ To get this project running locally, follow these steps:
 - **useFetchData Hook**: A custom React hook that fetches data from a JSON file and provides it to components.
 - **Accessibility**: The application is built with accessibility in mind, ensuring proper semantic HTML, ARIA attributes, and keyboard navigability.
 
-## Code Structure
-
-Here is an overview of the directory structure:
-````
-
-frontend-assignment/
-├── public/ # Public files (index.html, favicon, etc.)
-├── src/ # Source code files
-│ ├── components/ # Reusable UI components (Button, Pagination, Table)
-│ ├── hooks/ # Custom hooks (useFetchData)
-│ ├── App.js # Main app component
-│ ├── index.js # Entry point
-│ └── styles/ # CSS or SCSS files
-├── package.json # Project dependencies and scripts
-├── vite.config.js # Vite configuration
-└── README.md # Project documentation
-
-````
-
 ## Testing
 
 This project uses **ViTest** for unit and integration tests. To run the tests, use the following command:
 
 ```bash
 npm test
-````
+```
