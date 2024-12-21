@@ -18,7 +18,7 @@ const App = () => {
   const recordsPerPage = 5;
 
   const { data = [], loading } = useFetchData(
-    "src/data/frontend-assignment.json"
+    "https://raw.githubusercontent.com/saaslabsco/frontend-assignment/refs/heads/master/frontend-assignment.json"
   );
 
   const newData = data?.slice(
